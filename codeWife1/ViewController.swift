@@ -9,12 +9,11 @@
 import UIKit
 
 class ViewController: UIViewController {
+    @IBOutlet weak var startText: UITextField!
+    @IBOutlet weak var userButton: UIButton!
+    @IBOutlet weak var endText: UITextView!
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
+    @IBAction func buttonOnTap(_ sender: Any) {
+        endText.text = "Hello, my husband Antosha"
     }
-
-
 }
-
