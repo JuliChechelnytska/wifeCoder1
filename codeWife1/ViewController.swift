@@ -17,11 +17,12 @@ class ViewController: UIViewController {
         let array = startText.text!.components(separatedBy: " ").compactMap { Int($0) }
         let a = array[0]
         let b = array[1]
-        
-        endText.text = "\(a)+\(b)=\(a + b)\n"
-                     + "\(a)-\(b)=\(a - b)\n"
-                     + "\(a)*\(b)=\(a * b)\n"
-                     + "\(a)/\(b)=\(a / b)\n"
-                     + "\(a)%\(b)=\(a % b)\n"
-    }
+        endText.text = "\(a)<\(b)=\(a < b)\n"
+                     + "\(a)>\(b)=\(a > b)\n"
+                     + "\(a)<=\(b)=\(a <= b)\n"
+                     + "\(a)>=\(b)=\(a >= b)\n"
+                     + "\(a)==\(b)=\(a == b)\n"
+                     + "\(a)!=\(b)=\(a != b)\n"
+}
+
 }
