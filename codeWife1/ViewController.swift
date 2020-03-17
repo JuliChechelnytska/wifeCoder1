@@ -12,16 +12,15 @@ class ViewController: UIViewController {
     @IBOutlet weak var startText: UITextField!
     @IBOutlet weak var userButton: UIButton!
     @IBOutlet weak var endText: UITextView!
-
+    
     @IBAction func buttonOnTap(_ sender: Any) {
         let array = startText.text!.components(separatedBy: " ").compactMap { Int($0) }
         let a = array[0]
-        let b = array[1]
         
-        endText.text = "\(a)+\(b)=\(a + b)\n"
-                     + "\(a)-\(b)=\(a - b)\n"
-                     + "\(a)*\(b)=\(a * b)\n"
-                     + "\(a)/\(b)=\(a / b)\n"
-                     + "\(a)%\(b)=\(a % b)\n"
+        if a % 2 == 0 {
+            endText.text = "yes"
+        } else {
+            endText.text = "no"
+        }
     }
 }
