@@ -18,11 +18,10 @@ class ViewController: UIViewController {
         let a = array[0]
         let b = array[1]
         
-        endText.text = "\(a)<\(b)=\(a < b)\n"
-                     + "\(a)>\(b)=\(a > b)\n"
-                     + "\(a)<=\(b)=\(a <= b)\n"
-                     + "\(a)>=\(b)=\(a >= b)\n"
-                     + "\(a)==\(b)=\(a == b)\n"
-                     + "\(a)!=\(b)=\(a != b)\n"
+        endText.text = "\(a)+\(b)=\(a + b)\n"
+                     + "\(a)-\(b)=\(a - b)\n"
+                     + "\(a)*\(b)=\(a * b)\n"
+                     + "\(a)/\(b)=\(a / b)\n"
+                     + "\(a)%\(b)=\(a % b)\n"
     }
 }
