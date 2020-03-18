@@ -14,6 +14,13 @@ class ViewController: UIViewController {
     @IBOutlet weak var endText: UITextView!
 
     @IBAction func buttonOnTap(_ sender: Any) {
-        endText.text = "Hello, my husband Antosha"
+        let array = startText.text!.components(separatedBy: " ").compactMap { Int($0) }
+        let a = array[0]
+        
+        if a % 2 != 0 {
+            endText.text = "yes"
+        } else {
+            endText.text = "no"
+        }
     }
 }
