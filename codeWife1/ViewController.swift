@@ -14,6 +14,6 @@ class ViewController: UIViewController {
     @IBOutlet weak var endText: UITextView!
 
     @IBAction func buttonOnTap(_ sender: Any) {
-        endText.text = " "
+        endText.text = "Hello"
     }
 }
